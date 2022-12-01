@@ -7,16 +7,15 @@ tg.MainButton.color = "#2cab37";
 
 let item = "";
 
-for (let i = 1; i < 11; i++){
-let a = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8]
-let btn = document.getElementById("btn"+String(i+1))
+for (let i = 1; i < 8; i++){
+let btn = document.getElementById("btn"+String(i))
 
 btn.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   }
   else {
-    tg.MainButton.setText("Вы выбрали товар 1!");
+    tg.MainButton.setText("Вы выбрали товар");
     item = "1";
     tg.MainButton.show();
   }
