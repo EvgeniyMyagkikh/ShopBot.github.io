@@ -7,7 +7,7 @@ tg.MainButton.color = "#2cab37";
 
 let item = "";
 
-for (let i = 1;;i++){
+for (let i = 1; i < 11; i++){
 let a = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8]
 let btn = document.getElementById("btn"+String(i+1))
 
