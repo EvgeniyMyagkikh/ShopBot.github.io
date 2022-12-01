@@ -8,7 +8,7 @@ tg.MainButton.color = "#2cab37";
 let item = "";
 
 // получили все кнопки
-const inner = document.querySelector('.inner');
+const inner = document.querySelector(".inner");
 
 function show_message(){
     if (tg.MainButton.isVisible) {
@@ -21,10 +21,11 @@ function show_message(){
     }
 }
 
-inner.addEventListener("click", function(event)){
-    if (event.target.closest('.btn')){
-    show_message()};
- }
+inner.addEventListener("click", function(event){
+    if (event.target.closest('.item')){
+    show_message();
+    }
+ });
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
