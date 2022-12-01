@@ -16,7 +16,7 @@ btn.addEventListener("click", function(){
   }
   else {
     tg.MainButton.setText("Вы выбрали товар");
-    item = "1";
+    item = String(i);
     tg.MainButton.show();
   }
 })};
