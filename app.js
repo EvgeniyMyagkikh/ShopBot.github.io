@@ -8,22 +8,23 @@ tg.MainButton.color = "#2cab37";
 let item = "";
 
 // получили все кнопки
-const button = document.querySelectorAll(".btn");
+const inner = document.querySelector(".inner");
 
 function show_message(){
-if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
-		tg.MainButton.setText("Вы выбрали товар 1!");
-		item = "1";
-		tg.MainButton.show();
-	}
-});
+    if (tg.MainButton.isVisible) {
+        tg.MainButton.hide();
+    }
+    else {
+        tg.MainButton.setText("Вы выбрали товар");
+        item = '1';
+        tg.MainButton.show();
+    }
+}
 
-button.forEach(buttonItem => {
- buttonItem.addEventListener("click", show_message);
- });
+inner.addEventListener("click", function(event)){
+    if (event.target.closest('.item')){
+    show_message()};
+ }
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
