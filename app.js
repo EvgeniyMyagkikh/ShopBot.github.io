@@ -6,10 +6,12 @@ tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
 let item = "";
-let a = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8]
 
-for let i = 0;;i++{
- a[i].addEventListener("click", function(){
+for (let i = 1;;i++){}
+let a = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8]
+let btn = document.getElementById("btn"+String(i+1))
+
+btn.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   }
@@ -19,7 +21,6 @@ for let i = 0;;i++{
     tg.MainButton.show();
   }
 })};
-
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
