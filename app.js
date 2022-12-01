@@ -7,7 +7,7 @@ tg.MainButton.color = "#2cab37";
 
 let item = "";
 
-for (let i = 1; i < 8; i++){
+for (let i = 1; i < 9; i++){
 var btn = document.getElementById(String(i))
 
 btn.addEventListener("click", function(){
