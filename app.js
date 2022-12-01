@@ -18,7 +18,7 @@ function button_active() {
   }
 }
 
-const buttons = document.querySelectorAll('btn');
+const buttons = document.querySelectorAll('1');
 
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].onclick = button_active;
