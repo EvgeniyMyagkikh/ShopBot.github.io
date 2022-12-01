@@ -7,8 +7,7 @@ tg.MainButton.color = "#2cab37";
 
 let item = "";
 
-for (let i = 1; i < 9; i++){
-var btn = document.getElementById(String(i))
+const btn = document.querySelectorAll('btn')
 
 btn.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
@@ -16,10 +15,10 @@ btn.addEventListener("click", function(){
   }
   else {
     tg.MainButton.setText("Вы выбрали товар");
-    item = String(i);
+    item = '1'
     tg.MainButton.show();
   }
-})};
+});
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
