@@ -8,7 +8,7 @@ tg.MainButton.color = "#2cab37";
 let item = "";
 
 // получили все кнопки
-const button = document.querySelectorAll("btn");
+const button = document.querySelectorAll("item");
 
 function show_message(){
 if (tg.MainButton.isVisible) {
