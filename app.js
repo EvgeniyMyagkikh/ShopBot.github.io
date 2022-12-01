@@ -7,9 +7,10 @@ tg.MainButton.color = "#2cab37";
 
 let item = "";
 
-for (var i = 1; i < 9; i++) {
-let btn = document.getElementById(String(i))
-btn.addEventListener("click", function(e)){
+// получили все кнопки
+const button = document.querySelectorAll("btn");
+
+function show_message(){
 if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   }
@@ -18,7 +19,10 @@ if (tg.MainButton.isVisible) {
     item = '1'
     tg.MainButton.show();
   }
-}
+}}
+button.forEach(buttonItem => {
+ buttonItem.addEventListener("click", show_message);
+ });
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
