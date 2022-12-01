@@ -6,20 +6,15 @@ tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
 let item = "";
+let a = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8]
 
-let a = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8];
-
-for (let i = 0;;i++){
- i.addEventListener("click", function(){
-  var button = document.createElement('button');
-  button.type = 'button';
-  button.innerHTML = 'Press me';
-  button.className = 'btn';
+for let i = 0;;i++{
+ a[i].addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   }
   else {
-    tg.MainButton.setText("Вы выбрали товар");
+    tg.MainButton.setText("Вы выбрали товар 1!");
     item = "1";
     tg.MainButton.show();
   }
