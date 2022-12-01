@@ -12,14 +12,15 @@ const button = document.querySelectorAll("btn");
 
 function show_message(){
 if (tg.MainButton.isVisible) {
-    tg.MainButton.hide();
-  }
-  else {
-    tg.MainButton.setText("Вы выбрали товар");
-    item = '1'
-    tg.MainButton.show();
-  }
-}}
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 1!");
+		item = "1";
+		tg.MainButton.show();
+	}
+});
+
 button.forEach(buttonItem => {
  buttonItem.addEventListener("click", show_message);
  });
