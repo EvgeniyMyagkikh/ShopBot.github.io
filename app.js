@@ -19,7 +19,7 @@ for (let i = 0;;i++){
     tg.MainButton.hide();
   }
   else {
-    tg.MainButton.setText("Вы выбрали товар" + "" );
+    tg.MainButton.setText("Вы выбрали товар");
     item = "1";
     tg.MainButton.show();
   }
