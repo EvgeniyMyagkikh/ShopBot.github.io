@@ -9,7 +9,7 @@ let item = "";
 
 let a = [btn1, btn2, btn3, btn4, btn5, btn6];
 
-for i = 0;;i++{
+for (let i = 0;;i++){
  i.addEventListener("click", function(){
   var button = document.createElement('button');
   button.type = 'button';
