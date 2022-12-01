@@ -7,8 +7,10 @@ tg.MainButton.color = "#2cab37";
 
 let item = "";
 
-function button_active() {
-  if (tg.MainButton.isVisible) {
+for (var i = 1; i < 9; i++) {
+let btn = document.getElementById(String(i))
+btn.addEventListener("click", function(e)){
+if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   }
   else {
@@ -18,11 +20,6 @@ function button_active() {
   }
 }
 
-const buttons = document.querySelectorAll('1');
-
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].onclick = button_active;
-  }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
   tg.sendData(item);
