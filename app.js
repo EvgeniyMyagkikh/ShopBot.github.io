@@ -8,7 +8,7 @@ tg.MainButton.color = "#2cab37";
 let item = "";
 
 for (let i = 1; i < 8; i++){
-let btn = document.getElementById(String(i))
+var btn = document.getElementById(String(i))
 
 btn.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
