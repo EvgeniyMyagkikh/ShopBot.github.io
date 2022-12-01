@@ -7,7 +7,7 @@ tg.MainButton.color = "#2cab37";
 
 let item = "";
 
-let a = [btn1, btn2, btn3, btn4, btn5, btn6];
+let a = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8];
 
 for (let i = 0;;i++){
  i.addEventListener("click", function(){
