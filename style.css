@@ -11,6 +11,7 @@ body {
 }
 
 .inner {
+  user-select: none;
   display: flex;
   padding-left: 20px;
   grid-template-columns: 1fr 1fr;
@@ -20,12 +21,13 @@ body {
 .img {
   padding-left: 5px;
   width: 120px;
+  user-select: none;
 
 }
 
 .btn {
   display: flex;
-  padding:7px 31px;
+  padding: 7px 31px;
   border: none;
   background: rgb(248, 168, 24);
   border-radius: 10px;
@@ -33,6 +35,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   transition: background .2s linear;
+  user-select: none;
 }
 
 .btn:hover {
@@ -44,7 +47,7 @@ body {
   padding-right: 20px;
 }
 
-.counter__btn_minus{
+.counter__btn_minus {
   display: inline-block;
   width: 40px;
   height: 25px;
@@ -55,10 +58,12 @@ body {
   text-transform: uppercase;
   font-synthesis-weight: auto;
   text-align: center;
+  user-select: none;
 
 
 }
-.counter__btn_plus{
+
+.counter__btn_plus {
   display: inline-block;
   width: 40px;
   height: 25px;
@@ -70,12 +75,15 @@ body {
   font-weight: 800;
   font-synthesis-weight: auto;
   text-align: center;
+  user-select: none;
 }
 
 .counter__input {
   flex: 0 0 50px;
 }
+
 input {
+  user-select: none;
   width: 50%;
   height: 50%;
   background-color: #000010;
@@ -84,15 +92,13 @@ input {
   font-weight: bold;
   padding-left: 10px;
 }
+
 .counter__btn_minus:hover {
   background: red;
 }
 
 .counter__btn_plus:hover {
   background: forestgreen;
-}
-.usercard {
-  text-align: center;
 }
 
 /*
