@@ -16,7 +16,7 @@ function show_message(event){
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы добавили товар");
+        tg.MainButton.setText("Вы выбрали " + alert(event.getAttribute("alt"));
         item = '1';
         tg.MainButton.show();
     }
@@ -24,7 +24,7 @@ function show_message(event){
 
 // проверка, что это кнопка
 inner.addEventListener("click", function(event){
-    if (event.target.closest('.item')){
+    if (event.target.closest('.btn')){
     show_message(event);
     }
  });
