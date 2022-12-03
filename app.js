@@ -24,7 +24,7 @@ function show_message(event){
 
 // проверка, что это кнопка
 inner.addEventListener("click", function(event){
-    if (event.target.closest('.btn')){
+    if (event.target.closest('.item')){
     show_message(event);
     }
  });
