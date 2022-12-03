@@ -50,26 +50,27 @@ body {
   display: inline-flex;
   align-items: center}
 
-  .__btn_minus {
-    flex: 0 0 30px;
-    height: 30px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.counter__btn_minus {
+    display: inline-block;
+    padding: 5px 5px;
+    border: none;
+    background: rgb(248, 168, 24);
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
   }
 
 
-  .__btn_plus {
-    flex: 0 0 30px;
-    height: 30%;
-    border: 10px solid #000;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
+.counter__btn_plus {
+    display: inline-block;
+    padding: 5px 5px;
+    border: none;
+    background: rgb(248, 168, 24);
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
   }
 
   .__input {
