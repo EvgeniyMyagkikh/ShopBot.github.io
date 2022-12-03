@@ -9,7 +9,7 @@ let item = "";
 
 // Получили все объекты .inner
 const inner = document.querySelector(".inner");
-const data_count = document.querySelectorAll('[data-count]')
+const data_count = document.querySelectorAll('[data-count]');
 if (data_count) {
   data_count.forEach(data_count => {
     data_count.addEventListener('click', e => {
@@ -17,13 +17,16 @@ if (data_count) {
 
       if (target.closest('.counter__btn_minus')) {
         let value = parseInt(target.closest('.counter').querySelector('input').value);
-        --value;
+        if (value != 1) {
+          --value;
+        }
+        target.closest('.counter').querySelector('input').value = value;
       }
       if (target.closest('.counter__btn_plus')) {
         let value = parseInt(target.closest('.counter').querySelector('input').value);
         value++;
+        target.closest('.counter').querySelector('input').value = value;
       }
-      target.closest('.counter').querySelector('input').value = value;
     })
   })
 }
