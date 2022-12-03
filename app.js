@@ -10,11 +10,12 @@ let item = "";
 // Получили все объекты .inner
 const inner = document.querySelector(".inner");
 const data_count = document.querySelectorAll('[data-count]');
+
+//обработка нажатий кнопок +-
 if (data_count) {
   data_count.forEach(data_count => {
     data_count.addEventListener('click', e => {
       const target = e.target
-
       if (target.closest('.counter__btn_minus')) {
         let value = parseInt(target.closest('.counter').querySelector('input').value);
         if (value != 1) {
@@ -32,18 +33,15 @@ if (data_count) {
 }
 
 
-// Отправка сообщения, что на кнопку нажали
+// Обработка кнопки заказать
 function show_message(id) {
-  if (tg.MainButton.isVisible) {
-    tg.MainButton.hide();
-  } else {
-    tg.MainButton.setText("Перейти к оплате " + id)
-    item = '1';
-    tg.MainButton.show();
-  }
+  tg.MainButton.setText("Перейти к оплате " + id)
+  item = '1';
+  tg.MainButton.show();
 }
 
-// Проверка, что объект - кнопка
+
+// Проверка, что объект заказать - кнопка
 inner.addEventListener("click", function (event) {
   if (event.target.closest('.btn')) {
     id = event.target.getAttribute('id')
@@ -56,15 +54,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
   tg.sendData(item);
 });
 
-let usercard = document.getElementById("usercard");
-
-let p = document.createElement("p");
-
-p.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}`;
-
-
-usercard.appendChild(p);
 
 
 
