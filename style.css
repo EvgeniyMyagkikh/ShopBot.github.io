@@ -35,10 +35,9 @@ body {
   border-radius: 10px;
   text-transform: uppercase;
   font-weight: 800;
-  transition: .5s;
 }
 
-.btn:hover {
+.btn:active {
   background: green;
 }
 
@@ -90,11 +89,11 @@ input {
   font-weight: bold;
 }
 
-.counter__btn_minus:hover {
+.counter__btn_minus:active {
   background: red;
 }
 
-.counter__btn_plus:hover {
+.counter__btn_plus:active {
   background: forestgreen;
 }
 
