@@ -28,19 +28,20 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  border: none;
-  background: rgb(248, 168, 24);
-  border-radius: 10px;
   color: #fff;
+  border: none;
+  background: #4169E1;
+  text-decoration: none;
+  border-radius: 10px;
   text-transform: uppercase;
   font-weight: 800;
-
-  transition: background .2s linear;
+  transition: .5s;
 }
 
 .btn:hover {
-  background: lightgreen;
+  background: green;
 }
+
 
 .usercard {
   text-align: center;
@@ -48,41 +49,54 @@ body {
 
 .counter {
   display: inline-flex;
-  align-items: center}
+  align-items: center
+}
 
 .counter__btn_minus {
-    display: inline-block;
-    padding: 5px 5px;
-    border: none;
-    background: rgb(248, 168, 24);
-    border-radius: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 800;
-  }
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  border: none;
+  background: rgb(248, 168, 24);
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 
 
 .counter__btn_plus {
-    display: inline-block;
-    padding: 5px 5px;
-    border: none;
-    background: rgb(248, 168, 24);
-    border-radius: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 800;
-  }
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  border: none;
+  background: rgb(248, 168, 24);
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 
-  .__input {
-    flex: 0 0 30px;}
-    input {
-      width: 50%;
-      height: 50%;
-      background-color: #000010;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-    }
+.__input {
+  flex: 0 0 30px;
+}
+
+input {
+  width: 50%;
+  height: 50%;
+  background-color: #000010;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.counter__btn_minus:hover {
+  background: red;
+}
+
+.counter__btn_plus:hover {
+  background: forestgreen;
+}
 
 /*
 var(--tg-theme-bg-color)
