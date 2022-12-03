@@ -15,14 +15,14 @@ function show_message(){
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы выбрали товар");
+        tg.MainButton.setText("Вы выбрали");
         item = '1';
         tg.MainButton.show();
     }
 }
 
 inner.addEventListener("click", function(event){
-    if (event.target.closest('.item')){
+    if (event.target.closest('.btn')){
     show_message();
     }
  });
