@@ -15,7 +15,7 @@ function show_message(){
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("dfvjks");
+        tg.MainButton.setText("Вы выбрали");
         item = '1';
         tg.MainButton.show();
     }
