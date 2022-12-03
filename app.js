@@ -11,12 +11,12 @@ let item = "";
 const inner = document.querySelector(".inner");
 
 // действие кнопки
-function show_message(event){
+function show_message(inner){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы выбрали " + alert(event.getAttribute("alt"));
+        tg.MainButton.setText("Вы выбрали " + alert(inner.getAttribute("alt"));
         item = '1';
         tg.MainButton.show();
     }
@@ -25,7 +25,7 @@ function show_message(event){
 // проверка, что это кнопка
 inner.addEventListener("click", function(event){
     if (event.target.closest('.item')){
-    show_message(event);
+    show_message();
     }
  });
 
