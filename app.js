@@ -3,29 +3,30 @@ let tg = window.Telegram.WebApp;
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#2cab37";
+tg.MainButton.color = "#4169E1";
 
 let item = "";
 
-// получили все кнопки
+// Получили все объекты .inner
 const inner = document.querySelector(".inner");
 
-// действие кнопки
-function show_message(inner){
+// Отправка сообщения, что на кнопку нажали
+function show_message(id){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы выбрали ";
+        tg.MainButton.setText("Вы выбрали " + id)
         item = '1';
         tg.MainButton.show();
     }
 }
 
-// проверка, что это кнопка
+// Проверка, что объект - кнопка
 inner.addEventListener("click", function(event){
     if (event.target.closest('.btn')){
-    show_message(inner);
+    id = event.target.getAttribute('id')
+    show_message(id);
     }
  });
 
