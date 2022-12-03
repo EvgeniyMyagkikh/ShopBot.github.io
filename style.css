@@ -84,11 +84,11 @@ input {
   font-weight: bold;
   padding-left: 10px;
 }
-.counter__btn_minus:active {
+.counter__btn_minus:hover {
   background: red;
 }
 
-.counter__btn_plus:active {
+.counter__btn_plus:hover {
   background: forestgreen;
 }
 .usercard {
