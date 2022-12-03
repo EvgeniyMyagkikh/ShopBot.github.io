@@ -10,20 +10,22 @@ let item = "";
 // получили все кнопки
 const inner = document.querySelector(".inner");
 
-function show_message(){
+// действие кнопки
+function show_message(event){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы выбрали");
+        tg.MainButton.setText("Вы выбрали " + event.target.alt);
         item = '1';
         tg.MainButton.show();
     }
 }
 
+// проверка, что это кнопка
 inner.addEventListener("click", function(event){
     if (event.target.closest('.btn')){
-    show_message();
+    show_message(event);
     }
  });
 
