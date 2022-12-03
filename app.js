@@ -16,7 +16,7 @@ function show_message(inner){
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы выбрали " + alert(inner.closest('.img').getAttribute('alt'));
+        tg.MainButton.setText("Вы выбрали ";
         item = '1';
         tg.MainButton.show();
     }
