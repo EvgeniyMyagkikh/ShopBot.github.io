@@ -4,6 +4,7 @@ body {
   font-size: 18px;
   color: #000010;
   background: #000010;
+  user-select: none;
 }
 
 .container {
@@ -22,7 +23,6 @@ body {
   padding-left: 5px;
   width: 120px;
   user-select: none;
-
 }
 
 .btn {
