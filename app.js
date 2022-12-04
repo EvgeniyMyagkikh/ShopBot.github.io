@@ -8,7 +8,7 @@ tg.MainButton.color = "#4169E1";
 let item = "";
 
 // Получили все объекты .inner
-const inner = document.querySelector(".container");
+const inner = document.querySelector(".inner");
 const data_count = document.querySelectorAll('[data-count]');
 
 //обработка нажатий кнопок +-
@@ -43,7 +43,7 @@ function show_message(id) {
 
 // Проверка, что объект заказать - кнопка
 inner.addEventListener("click", function (event) {
-  if (event.target.closest('.inner')) {
+  if (event.target.closest('.btn')) {
     id = event.target.getAttribute('id')
     show_message(id);
   }
