@@ -31,14 +31,14 @@ body {
   position: absolute;
   width: 96px;
   height: 111px;
-  left: 65px;
+  left: 35px;
 }
 
 .img_2{
   position: absolute;
   width: 96px;
   height: 111px;
-  left: 250px;
+  left: 220px;
 }
 
 .btn {
@@ -53,13 +53,13 @@ body {
   transition: background .2s linear;
   user-select: none;
   position: absolute;
-  left: 60px;
+  left: 30px;
   top: 400px;
 }
 
 
 .btn_2{
-  left:245px;
+  left:215px;
 }
 
 
@@ -84,17 +84,28 @@ body {
   background: #FFD7D7;
 }
 .s{
-  left:60px;
+  left:30px;
 }
 
 .m{
-  left: 100px;
+  left: 70px;
 }
 
 .l{
-  left: 140px;
+  left: 110px;
 }
 
+.s2{
+  left:215px;
+}
+
+.m2{
+  left: 255px;
+}
+
+.l2{
+  left: 295px;
+}
 
 
 /*
