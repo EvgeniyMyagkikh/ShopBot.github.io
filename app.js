@@ -11,9 +11,9 @@ let item = "";
 const inner = document.querySelector(".inner");
 
 // Обработка кнопки заказать
-function show_message(id) {
-  tg.MainButton.setText("Перейти к оплате " + id)
-  item = '1';
+function show_message() {
+  tg.MainButton.setText("Перейти к оплате")
+
   tg.MainButton.show();
 }
 
