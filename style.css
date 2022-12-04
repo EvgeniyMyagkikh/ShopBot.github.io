@@ -67,6 +67,34 @@ body {
   background: #4169E1;
 }
 
+.size{
+  display: flex;
+  padding: 6px 13px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background .2s linear;
+  user-select: none;
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  top: 370px;
+  background: #FFD7D7;
+}
+.s{
+  left:60px;
+}
+
+.m{
+  left: 100px;
+}
+
+.l{
+  left: 140px;
+}
+
 
 
 /*
