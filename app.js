@@ -43,8 +43,8 @@ function show_message(id) {
 
 // Проверка, что объект заказать - кнопка
 inner.addEventListener("click", function (event) {
-  if (event.target.closest('.btn')) {
-    id = event.target.getAttribute('id')
+  if (event.target.closest('.btn1') || (event.target.closest('.btn2'))){
+    let id = event.target.getAttribute('id');
     show_message(id);
   }
 });
