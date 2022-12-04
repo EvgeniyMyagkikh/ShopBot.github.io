@@ -21,7 +21,7 @@ function show_message() {
 inner.addEventListener("click", function (event) {
   if (event.target.closest('.btn')){
     let id = event.target.getAttribute('id');
-    show_message(id);
+    show_message();
   }
 });
 
