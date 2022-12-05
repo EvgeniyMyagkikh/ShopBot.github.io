@@ -28,7 +28,7 @@ function show_message(id) {
   item = 1;
   product = id;
 
-  tg.MainButton.show();
+  tg.MainButton.show(setInterval(5));
   tg.MainButton.setText("Перейти к оплате");
   tg.MainButton.show();
 }
