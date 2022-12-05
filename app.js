@@ -21,6 +21,11 @@ function cart(product, size) {
 
   tea = product;
   tea_size = size;
+
+  console.log(coffee);
+  console.log(coffee_size);
+  console.log(tea);
+  console.log(tea_size);
 }
 // Обработка кнопки заказать
 function show_message(id) {
@@ -28,7 +33,6 @@ function show_message(id) {
   item = 1;
   product = id;
 
-  tg.MainButton.show(setInterval(5));
   tg.MainButton.setText("Перейти к оплате");
   tg.MainButton.show();
 }
@@ -42,7 +46,7 @@ inner.addEventListener("click", function (event) {
   if (event.target.closest('.size')) {
     let id = event.target.getAttribute('id');
     if (event.target.closest('.coffee')) {
-      let coffee = 1 
+      let coffee = 1
       cart(id, coffee)
     }
   }
