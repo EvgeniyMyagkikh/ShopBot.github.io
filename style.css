@@ -27,14 +27,14 @@ body {
 
 }
 
-.img_1{
+.img_coffee {
   position: absolute;
   width: 96px;
   height: 111px;
   left: 35px;
 }
 
-.img_2{
+.img_tea {
   position: absolute;
   width: 96px;
   height: 111px;
@@ -58,8 +58,8 @@ body {
 }
 
 
-.btn_2{
-  left:215px;
+.btn_2 {
+  left: 215px;
 }
 
 
@@ -67,7 +67,7 @@ body {
   background: #4169E1;
 }
 
-.size{
+.size {
   display: flex;
   padding: 6px 13px;
   border: none;
@@ -83,29 +83,35 @@ body {
   top: 370px;
   background: #FFD7D7;
 }
-.s{
-  left:30px;
+
+.size:active{
+  background: #4169E1;
 }
 
-.m{
+.s {
+  left: 30px;
+}
+
+.m {
   left: 70px;
 }
 
-.l{
+.l {
   left: 110px;
 }
 
-.s2{
-  left:215px;
+.s2 {
+  left: 215px;
 }
 
-.m2{
+.m2 {
   left: 255px;
 }
 
-.l2{
+.l2 {
   left: 295px;
 }
+
 
 
 /*
