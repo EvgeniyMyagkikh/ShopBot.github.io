@@ -84,7 +84,7 @@ body {
   background: #FFD7D7;
 }
 
-.size:active{
+.size:hover{
   background: #4169E1;
 }
 
