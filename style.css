@@ -31,14 +31,14 @@ body {
   position: absolute;
   width: 96px;
   height: 111px;
-  left: 35px;
+  left: 70px;
 }
 
 .img_tea {
   position: absolute;
   width: 96px;
   height: 111px;
-  left: 220px;
+  left: 240px;
 }
 
 .btn {
@@ -53,13 +53,13 @@ body {
   transition: background .2s linear;
   user-select: none;
   position: absolute;
-  left: 30px;
+  left: 66px;
   top: 400px;
 }
 
 
 .btn_2 {
-  left: 215px;
+  left: 233px;
 }
 
 
@@ -88,36 +88,36 @@ body {
   background: #4169E1;
 }
 
-.s {
-  left: 30px;
+.size_c_s {
+  left: 66px;
 }
 
-.m {
-  left: 70px;
+.size_c_m {
+  left: 106px;
 }
 
-.l {
-  left: 110px;
+.size_c_l{
+  left: 146px;
 }
 
-.s2 {
-  left: 215px;
+.size_t_s {
+  left: 233px;
 }
 
-.m2 {
-  left: 255px;
+.size_t_m {
+  left: 277px;
 }
 
-.l2 {
-  left: 295px;
+.size_t_l {
+  left: 317px;
 }
 
 .img_logo{
   position: absolute;
   width: 213px;
   height: 75px;
-  left: 88px;
-  top: 24px;
+  left: 108px;
+  top: 25px;
 
   mix-blend-mode: normal;
   backdrop-filter: blur(2px);
