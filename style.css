@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-size: 18px;
   color: #000010;
-  background: #5191DE;
+  background: #1E1E1E;
   user-select: none;
 }
 
@@ -112,6 +112,18 @@ body {
   left: 295px;
 }
 
+.img_logo{
+  position: absolute;
+  width: 213px;
+  height: 75px;
+  left: 88px;
+  top: 24px;
+
+  mix-blend-mode: normal;
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+}
 
 
 /*
