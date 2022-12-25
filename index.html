@@ -4,34 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Site</title>
 </head>
 <body>
 <div class="container">
-  <div class="inner">
-    <img src="1.jpg" alt="" class="img_logo"/>
+  <div class="products">
+    <article data-pid="coffee" class="products coffee">
+      <h5 class="coffee__title">Латте</h5>>
+      <img src="Coffee.png" class="coffee__image" alt=''>
 
-    <div class="coffee">
-      <img src="Coffee.png"  class="img img_coffee" width="512">
+      <div class="coffee__figure_price">
+        <div class="coffee__text_price">110</div>
+      </div>
 
-      <button class="size size_c size_c_s" id="S">S</button>
+      <div data-bid="s" class="btn c_btn_s">
+        <div class="coffee__text_s">s</div>
+      </div>
+      <div data-bid="m" class="=btn c_btn_m">
+        <div class="coffee__text_m">m</div>
+      </div>
+      <div data-bid="l" class="=btn c_btn_l">
+        <div class="coffee__text_l">l</div>
+      </div>
+      <div data-bid="Купить" class="=btn c_buy">
+        <div class="coffee__text_buy">Добавить</div>
+      </div>
 
-      <button class="size size_c size_c_m" id="M">M</button>
 
-      <button class="size size_c size_c_l" id="L">L</button>
-      <button class="btn btn_1" id="Кофе">Добавить</button>
-    </div>
-
-    <div class="tea">
-      <img src="Tea.png" class="img img_tea" width="512">
-
-      <button class="size size_t size_t_s" id="S2">S</button>
-
-      <button class="size size_t size_t_m" id="M2">M</button>
-
-      <button class="size size_t size_t_l" id="L2">L</button>
-    </div>
-    <button class="btn btn_2" id="Чай">Добавить</button>
+    </article>
   </div>
 </div>
 
