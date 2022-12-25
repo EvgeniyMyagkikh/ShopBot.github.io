@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-size: 18px;
   color: #000010;
-  background: #1E1E1E;
+  background: #100F0F;
   user-select: none;
 }
 
@@ -11,119 +11,186 @@ body {
   max-width: 390px;
 }
 
-.inner {
-  user-select: none;
-  display: flex;
-  padding-left: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 200px 200px;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
+  gap: 39px;
 }
-
-.img {
-  padding-left: 5px;
-  width: 120px;
-  user-select: none;
-  top: 250px;
-
-}
-
-.img_coffee {
+.coffee__title{
   position: absolute;
-  width: 96px;
-  height: 111px;
-  left: 70px;
-}
+  width: 68px;
+  height: 19px;
+  left: 114px;
+  top: 100px;
 
-.img_tea {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+}
+.coffee__image{
   position: absolute;
-  width: 96px;
-  height: 111px;
-  left: 240px;
+  width: 75px;
+  height: 85px;
+  left: 95px;
+  top: 162px;
 }
 
-.btn {
-  display: flex;
-  padding: 7px 25px;
-  border: none;
-  background: rgb(248, 168, 24);
+.coffee__figure_price{
+  position: absolute;
+  width: 93px;
+  height: 20px;
+  left: 86px;
+  top: 267px;
+
+  background: #4585E6;
   border-radius: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: background .2s linear;
-  user-select: none;
+}
+
+.coffee__text_price{
   position: absolute;
-  left: 66px;
-  top: 400px;
+  width: 30px;
+  height: 12px;
+  left: 35px;
+  top: 3px;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+
+  color: #FFFFFF;
 }
 
-
-.btn_2 {
-  left: 233px;
-}
-
-
-.btn:hover {
-  background: #4169E1;
-}
-
-.size {
-  display: flex;
-  padding: 6px 13px;
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: background .2s linear;
-  user-select: none;
+.c_btn_s{
   position: absolute;
   width: 35px;
   height: 25px;
-  top: 370px;
-  background: #FFD7D7;
-}
+  left: 73px;
+  top: 303px;
 
-.size:hover{
-  background: #4169E1;
-}
-
-.size_c_s {
-  left: 66px;
-}
-
-.size_c_m {
-  left: 106px;
-}
-
-.size_c_l{
-  left: 146px;
-}
-
-.size_t_s {
-  left: 233px;
-}
-
-.size_t_m {
-  left: 277px;
-}
-
-.size_t_l {
-  left: 317px;
-}
-
-.img_logo{
-  position: absolute;
-  width: 213px;
-  height: 75px;
-  left: 108px;
-  top: 25px;
-
-  mix-blend-mode: normal;
-  backdrop-filter: blur(2px);
-  /* Note: backdrop-filter has minimal browser support */
+  background: #FFFFFF;
   border-radius: 10px;
+
 }
+
+.c_btn_m{
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  left: 115px;
+  top: 303px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+
+}
+
+.c_btn_l{
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  left: 157px;
+  top: 303px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+
+}
+
+.coffee__text_s{
+
+  position: absolute;
+  width: 24px;
+  height: 15px;
+  left: 14px;
+  top: 3px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.coffee__text_m{
+
+  position: absolute;
+  width: 24px;
+  height: 15px;
+  left: 11px;
+  top: 3px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.coffee__text_l{
+
+  position: absolute;
+  width: 24px;
+  height: 15px;
+  left: 14px;
+  top: 3px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.c_buy{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 119px;
+  height: 26px;
+  left: 75px;
+  top: 338px;
+
+  background: #E17B41;
+  border: 1px solid #E17B41;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+}
+
+.coffee__text_buy{
+  position: absolute;
+  width: 92px;
+  height: 15px;
+  left: 30px;
+  top: 5px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #FFFFFF;
+}
+
+
 
 
 /*
