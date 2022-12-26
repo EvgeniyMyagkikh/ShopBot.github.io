@@ -1,196 +1,106 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  color: #000010;
-  background: #100F0F;
-  user-select: none;
+  position: relative;
+  width: 430px;
+  height: 932px;
+
+  background: linear-gradient(180deg, #3A4EBB -10.96%, rgba(10, 16, 48, 0) 100%);
 }
+
 
 .container {
   max-width: 390px;
 }
 
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
-  gap: 39px;
-}
-.coffee__title{
-  position: absolute;
-  width: 68px;
-  height: 19px;
-  left: 114px;
-  top: 100px;
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url('fonts/KaushanScript-Regular.ttf') format("truetype");
 
-  font-family: 'Montserrat';
+
+}
+
+.title {
+  position: absolute;
+  width: 301px;
+  height: 63px;
+  left: 66px;
+  top: 33px;
+  font-family: 'Kaushan Script';
   font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
 
   color: #FFFFFF;
-}
-.coffee__image{
-  position: absolute;
-  width: 75px;
-  height: 85px;
-  left: 95px;
-  top: 162px;
+
+  text-shadow: 4px 4px #4585E6;
 }
 
-.coffee__figure_price{
-  position: absolute;
-  width: 93px;
-  height: 20px;
-  left: 86px;
-  top: 267px;
-
-  background: #4585E6;
-  border-radius: 10px;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('css/fonts/Montserrat-SemiBold.ttf') format("truetype");
 }
 
-.coffee__text_price{
+.timer {
   position: absolute;
-  width: 30px;
-  height: 12px;
-  left: 35px;
-  top: 3px;
-
+  width: 184px;
+  height: 26px;
+  left: 126px;
+  top: 134px;
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 15px;
 
   color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.c_btn_s{
-  position: absolute;
-  width: 35px;
-  height: 25px;
-  left: 73px;
-  top: 303px;
-
-  background: #FFFFFF;
-  border-radius: 10px;
-
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 51px;
 }
 
-.c_btn_m{
+.item {
   position: absolute;
-  width: 35px;
-  height: 25px;
-  left: 115px;
-  top: 303px;
+  width: 160px;
+  height: 250px;
+  left: 29px;
+  top: 160px;
 
-  background: #FFFFFF;
-  border-radius: 10px;
-
-}
-
-.c_btn_l{
-  position: absolute;
-  width: 35px;
-  height: 25px;
-  left: 157px;
-  top: 303px;
-
-  background: #FFFFFF;
-  border-radius: 10px;
-
-}
-
-.coffee__text_s{
-
-  position: absolute;
-  width: 24px;
-  height: 15px;
-  left: 14px;
-  top: 3px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  /* identical to box height */
-
-  color: #000000;
-}
-
-.coffee__text_m{
-
-  position: absolute;
-  width: 24px;
-  height: 15px;
-  left: 11px;
-  top: 3px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  /* identical to box height */
-
-  color: #000000;
-}
-
-.coffee__text_l{
-
-  position: absolute;
-  width: 24px;
-  height: 15px;
-  left: 14px;
-  top: 3px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  /* identical to box height */
-
-  color: #000000;
-}
-
-.c_buy{
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 119px;
-  height: 26px;
-  left: 75px;
-  top: 338px;
-
-  background: #E17B41;
-  border: 1px solid #E17B41;
+  background: #36ABFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-
+  border-radius: 20px;
 }
 
-.coffee__text_buy{
+.item__title {
   position: absolute;
-  width: 92px;
-  height: 15px;
-  left: 30px;
-  top: 5px;
+  width: 68px;
+  height: 19px;
+  left: 85px;
+  top: 170px;
 
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 15px;
-  /* identical to box height */
+  line-height: 17px;
 
   color: #FFFFFF;
 }
 
+.item__image {
+  position: absolute;
+  width: 75px;
+  height: 85px;
+  left: 69px;
+  top: 202px;
 
+  background: url(img/Coffee.png);
+}
 
 
 /*
