@@ -50,7 +50,7 @@ body {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
 
   color: #FFFFFF;
@@ -100,7 +100,7 @@ body {
 }
 
 .title_latte{
-  left: 10px;
+  left: 15px;
 }
 .title_americano{
   left: -12px;
@@ -152,16 +152,67 @@ body {
   background: url(img/Coffee.png);
 }
 
+.btn{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+}
 .btn__size{
-  position: relative;
+  flex-direction: column;
   width: 35px;
   height: 25px;
-  left: 47px;
-  top: 343px;
+  margin-top: 100px;
+  margin-left: 20px;
 
   background: #FFFFFF;
   border-radius: 10px;
 }
+
+
+.s{
+  margin-left: 14px;
+  margin-top: 3px;
+}
+.m{
+  margin-left: 11px;
+  margin-top: 3px;
+}
+
+.l{
+  margin-left: 15px;
+  margin-top: 4px;
+}
+
+.btn__buy{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 119px;
+  height: 26px;
+  left: 20px;
+  top: 210px;
+
+  background: #E17B41;
+  border: 1px solid #E17B41;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.btn__text_buy{
+  position: absolute;
+  width: 91px;
+  height: 14px;
+  left: 35px;
+  top: 5px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #FFFFFF;
+}
+
 
 
 /*
