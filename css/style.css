@@ -23,7 +23,7 @@ body {
   width: 301px;
   height: 63px;
   left: 66px;
-  top: 33px;
+  top: -20px;
   font-family: 'Kaushan Script';
   font-style: normal;
   font-weight: 400;
@@ -45,7 +45,7 @@ body {
   width: 184px;
   height: 26px;
   left: 126px;
-  top: 134px;
+  top: 100px;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -58,36 +58,86 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 51px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 .item {
-  position: absolute;
+  position: relative;
+  flex-direction: column;
+  display: flex;
   width: 160px;
   height: 250px;
-  left: 29px;
-  top: 160px;
+  top: 150px;
+  left: 10px;
 
   background: #36ABFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('css/fonts/Montserrat-SemiBold.ttf') format("truetype");
+}
 .item__title {
-  position: absolute;
+  position: relative;
   width: 68px;
   height: 19px;
-  left: 85px;
-  top: 170px;
+  align-self: center;
+
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
+
+  color: #FFFFFF;
+}
+
+.title_latte{
+  left: 10px;
+}
+.title_americano{
+  left: -12px;
+}
+.title_cappuccino{
+  left: -5px;
+}
+.title_tea{
+  left: 20px;
+}
+
+.item__label_price {
+  position: absolute;
+  display: flex;
+  width: 35px;
+  height: 25px;
+  top:20px;
+  left: 120px;
+  flex: 0 0 48px;
+
+  background: #E17B41;
+  border-radius: 10px;
+}
+
+.item__text_price{
+  position: relative;
+  width: 65px;
+  height: 14px;
+  top:-18px;
+  left: 7px;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
 
   color: #FFFFFF;
 }
@@ -96,10 +146,21 @@ body {
   position: absolute;
   width: 75px;
   height: 85px;
-  left: 69px;
-  top: 202px;
+  left: 45px;
+  top: 65px;
 
   background: url(img/Coffee.png);
+}
+
+.btn__size{
+  position: relative;
+  width: 35px;
+  height: 25px;
+  left: 47px;
+  top: 343px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
 }
 
 
