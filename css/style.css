@@ -169,8 +169,11 @@ body {
 
 
 .s{
-  margin-left: 14px;
-  margin-top: 3px;
+  position: absolute;
+width: 24px;
+height: 15px;
+left: 60px;
+top: 348px;
 }
 .m{
   margin-left: 11px;
