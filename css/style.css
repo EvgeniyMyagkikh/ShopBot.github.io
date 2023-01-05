@@ -103,18 +103,22 @@ body {
 
 .title_latte {
   left: 15px;
+  top: -10px;
 }
 
 .title_americano {
   left: -12px;
+  top: -10px;
 }
 
 .title_cappuccino {
   left: -5px;
+  top: -10px;
 }
 
 .title_tea {
   left: 20px;
+  top: -10px;
 }
 
 .item__label_price {
@@ -151,16 +155,16 @@ body {
   position: absolute;
   width: 75px;
   height: 85px;
-  left: 45px;
-  top: 65px;
+  left: 44px;
+  top: 45px;
 }
 
 .image_tea {
   position: absolute;
   width: 80px;
   height: 90px;
-  left: 48px;
-  top: 60px;
+  left: 45px;
+  top: 45px;
 }
 
 .syrup__container {
@@ -170,7 +174,7 @@ body {
   width: 120px;
   height: 23px;
   left: 20px;
-  top: 155px;
+  top: 150px;
 
   background: #E17B41;
 
@@ -182,7 +186,7 @@ body {
   width: 130px;
   height: 33px;
   left: 18px;
-  top: -6px;
+  top: -7px;
 
   font-family: 'Montserrat';
   font-style: normal;
