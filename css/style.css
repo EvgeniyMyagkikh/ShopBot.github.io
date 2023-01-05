@@ -278,6 +278,22 @@ body {
   color: #FFFFFF;
 }
 
+.submenu_list {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  height: 200px;
+  left: -20px;
+  top: -115px;
+
+  background: #2557A3;
+  border-radius: 20px;
+}
+
+.syrup__container:active.submenu_list {
+  display: block;
+}
 
 /*
 var(--tg-theme-bg-color)
