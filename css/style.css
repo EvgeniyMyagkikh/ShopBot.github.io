@@ -291,7 +291,7 @@ body {
   border-radius: 20px;
 }
 
-.syrup__container:active.submenu_list {
+.syrup__container:active .submenu_list {
   display: block;
 }
 
